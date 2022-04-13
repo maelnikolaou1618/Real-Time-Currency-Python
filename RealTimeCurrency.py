@@ -2,7 +2,7 @@ from tkinter import *
 import requests, json
 
 window=Tk()
-window.geometry("315x210")
+window.geometry("300x210")
 window.title('Currency Convertor')
 window.config(bg="light blue")
 var1= StringVar()
@@ -43,8 +43,8 @@ if __name__ =="__main__":
     lbl2.grid(row=2, column=0)
     lbl3.grid(row=3, column=0)
     lbl4.grid(row=5, column=0)
-    amount1_field = Entry(window)
-    amount2_field = Entry(window)
+    amount1_field = Entry(window, justify='center', width=10)
+    amount2_field = Entry(window, justify='center', width=10)
     amount1_field.grid(row=1, column=1, ipadx='25')
     amount2_field.grid(row=5, column=1, ipadx='25')
     currencycode_list =['INR', 'USD', 'CAD', 'CNY', 'DKK', 'EUR']
